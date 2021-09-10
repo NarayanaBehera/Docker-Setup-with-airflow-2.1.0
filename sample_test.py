@@ -4,7 +4,7 @@ from airflow.operators.bash_operator import BashOperator
 
 default_args = {
     'owner': 'Remediate',
-    'start_date': datetime(2021, 8, 13),
+    'start_date': datetime(2021, 9, 9),
     'depends_on_past': False,
 }
 
