@@ -1,0 +1,18 @@
+Reference link:
+------------------------------
+1)https://airflow.apache.org/docs/docker-stack/build.html
+2) https://faun.pub/apache-airflow-2-0-complete-installation-with-docker-explained-f07aa1049f1e
+3)https://airflow.apache.org/docs/apache-airflow/2.1.0/docker-compose.yaml
+
+---------------------------------------------------------------------------------------------------
+1)docker build -t  apache/airflow:2.1.0 .
+
+2) Create dags , logs , plugins folder
+---------------------------------------------------
+mkdir ./dags ./logs ./plugins 
+echo -e “AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0” > .env
+
+
+3)docker-compose up airflow-init
+
+4)docker-compose up
