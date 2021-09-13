@@ -16,3 +16,5 @@ echo -e “AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0” > .env
 3)docker-compose up airflow-init
 
 4)docker-compose up
+
+5)docker-compose run airflow-worker airflow users create --role Admin --username admin --email admin --firstname admin --lastname admin --password admin
